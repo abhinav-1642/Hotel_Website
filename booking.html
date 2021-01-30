@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style type="text/css">
+		
+	body{
+		background:url('luxury.jpg');
+		background-size:cover;
+		background-repeat: no-repeat;
+	
+		padding:10%;
+			text-align: center;
+	}
+
+	div#jumbotron{
+		padding:2%;
+		width:70vw;
+		height:60vh;
+		background:rgba(242, 188, 229,0.8)
+
+		
+	}
+
+	form{
+		font-size:3vw; 
+
+	}
+
+	input , select{
+		width: 30%;
+		padding:2%;
+		border:1px solid black;
+		font-size: 80%;
+		margin:1%;
+	}
+	header{
+		font-family: helvetica;
+		border-bottom: 2px solid white;
+		margin:2%;
+	}
+	h1{
+		display: inline;
+	}
+	small{
+		color:white;
+		font-size: 2vw;
+	}
+	button{
+		width:40%;
+		padding:2%;
+		border:1px solid black;
+		font-size: 70%;
+	}
+	button:hover{
+		background-color:#d317c3; 
+	}
+	a{
+		color:black;
+		text-decoration: none;
+	}
+
+	</style>
+
+
+</head>
+<body>
+<div id="jumbotron">
+<header>
+<h1>Select your dates and destination</h1> <small>and get ready to relax</small></header>
+<form name="bookingForm">
+
+<label for="forDate">From</label>
+<input type="date" name="fromDate" id="fromDate">
+<label for="toDate">to</label>
+<input type="date" name="toDate" id="toDate"></br>
+<label>Select city</label>
+<select>
+<option value="Allahabad">Allahabad</option>
+<option value="Bhubneshwar">Bhubneshwar</option>
+<option value="chandigarh">Chandigarh</option>
+<option value="mumbai">Mumbai</option>
+<option value="Goa">Goa</option>
+<option value="gujarat">Gujarat</option>
+<option value="pune">Pune</option>
+<option value="himachal">Himachal Pradesh</option>
+<option value="uttrakhand">Uttrakhand</option>
+<option value="Jammu">Jammu and Kashmir</option>
+<option value="chennai">Chennai</option>
+<option value="Banglore">Banglore</option>
+<option value="delhi">Delhi</option>
+</select></br>
+<br>
+<label>Select Room</label>
+<select>
+<option value="LUXURY">Luxuary</option>
+<option value="PRESIDENTIAL">Presidential</option>
+<option value="GENERAL">General</option>
+</select></br>
+
+<button type="button" id="further"><a href="form.html">Fill further Details</a></button>
+</form>
+</div>
+
+	
+</body>
+</html>

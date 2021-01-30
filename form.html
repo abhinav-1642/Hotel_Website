@@ -1,0 +1,61 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>form</title>
+	<link rel="stylesheet" href="form1.css">
+</head>
+<body>
+	<form action="form_submit" method="get" accept-charset="utf-8">
+	<h1>REGISTRATION</h1>
+	<table>
+
+	<tr>
+		<td><label for="firstname">FIRST-NAME</label></td><td><input type="text" name="firstname" value="enter your first name"></td></tr><tr>
+		<td><label for="lastname">LAST-NAME</label></td><td><input type="text" name="lastname" value="enter your last name"><br></td></tr><tr>
+		<td><label for="mother">MOTHER</label></td><td><input type="text" name="mother" value="enter mothers name"><br></td></tr><tr>
+		<td><label for="father">FATHER</label></td><td><input type="text" name="father" value="enter fathers name"><br></td></tr><tr>
+		<td><label for="address">ADDRESS</label></td><td><input type="text" name="address" value="address"></td></tr><tr>
+		<td><label for="city">CITY</label></td><td><input type="text" name="city" value="city"><br></td></tr><tr>
+		<td><label for="district">DISTRICT</label></td><td><input type="text" name="district" value="district"><br></td></tr><tr>
+		<td><label for="typeofsuite">TYPE OF SUITE  </label></td><td><select name="courses">
+			<option value="luxury">LUXURY</option>
+			<option value="presidential">PRESIDENTIAL</option>
+			<option value="dreamy">DREAMY</option>
+			<option value="general">GENERAL</option>
+			<option value="budget">BUDGET</option>
+			</select></td></tr><tr>
+			<td><label for="food">FOOD TO BE INCLUDED</label></td><td><input type="Radio" name="hyes" value="yes" id="chk" CHECKED>YES<input type="Radio" name="hno" value="no" id="chk">NO</td></tr><tr>
+			<td><label for="pic">PASSPORT</label></td><td><input type="file" name="passport" value="choose your pic" ></td></tr><tr>
+		
+			
+		</table>
+		<button type="submit"><a href="th.html">SUBMIT</a></button> <button type="reset">RESET</button>
+		</form>
+		<script>
+			
+			inp=document.getElementsByTagName('input');
+var i=0;
+for(i;i<9;i=i+1){
+inp[i].addEventListener('click',function(){
+this.value=" ";
+});
+inp[i].addEventListener('blur',function(){
+if(this.value==" "){
+alert('please fill '+this.name+' empty field');
+}
+});
+
+}
+
+		</script>
+</body>
+</html>
+ 
